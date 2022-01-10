@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_card/home_page.dart';
+import 'package:flutter_card/pages/home_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -21,6 +21,16 @@ class MyApp extends StatelessWidget {
     // const pi = 3.1416;
     // final editable = 20;
 
-    return const MaterialApp(home: HomePage());
+    return MaterialApp(
+      home: HomePage(),
+      themeMode: ThemeMode.light,
+      darkTheme: ThemeData(
+        brightness: Brightness.dark,
+      ),
+      theme: ThemeData(
+        primarySwatch: Colors.blueGrey,
+        //primaryColor: Colors.amberAccent,
+      ),
+    );
   }
 }

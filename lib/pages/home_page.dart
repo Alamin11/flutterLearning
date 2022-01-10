@@ -13,10 +13,8 @@ class HomePage extends StatelessWidget {
         title: const Text("Catalog App"),
       ),
       body: Center(
-        child: Container(
-          child:
-              Text("This is another try for next $days days by myself - $name"),
-        ),
+        child:
+            Text("This is another try for next $days days by myself - $name"),
       ),
       drawer: const Drawer(),
     );
