@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_card/pages/home_page.dart';
+import 'package:flutter_card/pages/login_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
     // final editable = 20;
 
     return MaterialApp(
-      home: HomePage(),
+      //home: HomePage(),
       themeMode: ThemeMode.light,
       darkTheme: ThemeData(
         brightness: Brightness.dark,
@@ -31,6 +32,12 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blueGrey,
         //primaryColor: Colors.amberAccent,
       ),
+      initialRoute: "/home_page",
+      routes: {
+        "/": (context) => LoginPage(),
+        // "/login_page": (context) => const Login_page(),
+        "/home_page": (context) => HomePage(),
+      },
     );
   }
 }
