@@ -12,7 +12,10 @@ class LoginPage extends StatelessWidget {
       child: SingleChildScrollView(
         child: Column(
           children: [
-            Image.asset("assets/images/login_image.png"),
+            Image.asset(
+              "assets/images/login_image.png",
+              fit: BoxFit.cover,
+            ),
             const SizedBox(
               height: 20.0,
             ),
@@ -54,7 +57,7 @@ class LoginPage extends StatelessWidget {
                         fontSize: 18,
                       ),
                     ),
-                    style: TextButton.styleFrom(minimumSize: Size(150.0, 45.0)),
+                    style: TextButton.styleFrom(minimumSize: const Size(150.0, 45.0)),
                     onPressed: () {
                       // ignore: avoid_print
                       //print("Onpressed button clicked");

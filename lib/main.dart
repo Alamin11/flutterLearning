@@ -32,11 +32,11 @@ class MyApp extends StatelessWidget {
         brightness: Brightness.dark,
       ),
       theme: ThemeData(
-        primarySwatch: Colors.blueGrey,
+        primarySwatch: Colors.deepPurple,
         fontFamily: GoogleFonts.lato().fontFamily,
         //primaryColor: Colors.amberAccent,
       ),
-      //initialRoute: "/home_page",
+      initialRoute: MyRoutes.loginRoute,
       routes: {
         MyRoutes.loginRoute: (context) => const LoginPage(),
         // "/login_page": (context) => const Login_page(),
